@@ -4,76 +4,71 @@
 <title>Campaña JTE · Revisión</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap">
 <style>
-:root{--negro:#0b0b0c;--panel:#151517;--linea:#2a2a2d;--oro:#a87a2d;--oro2:#c9a34e;--txt:#ece8e1;--gris:#a29d94;--ok:#3f8f5c}
+:root{--bg:#0b0b0c;--panel:#151517;--line:#2a2a2d;--oro:#a87a2d;--oro2:#c9a34e;--ink:#ece8e1;--muted:#a29d94;--ok:#3f8f5c;--ok-s:#17301f;--warn:#c98a2e;--warn-s:#33270f}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--negro);color:var(--txt);font:16px/1.55 "Barlow",system-ui,sans-serif;padding:26px 16px 70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Barlow",system-ui,sans-serif;padding:26px 16px 70px}
 .wrap{max-width:1180px;margin:0 auto}
 .eb{font:700 12px/1 Barlow;letter-spacing:3px;text-transform:uppercase;color:var(--oro2)}
-h1{font-size:32px;line-height:1.15;margin:8px 0 6px}h2{font-size:22px;margin:0 0 12px}h3{font-size:17px;margin:0 0 6px}
-.sub{color:var(--gris);margin:0 0 22px;max-width:800px}
+h1{font-size:32px;line-height:1.15;margin:8px 0 6px}h2{font-size:22px;margin:0 0 12px}h3{font-size:17px;margin:0}
+.sub{color:var(--muted);margin:0 0 22px;max-width:820px}
 nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
-nav a{color:var(--txt);text-decoration:none;border:1px solid var(--linea);background:var(--panel);border-radius:999px;padding:6px 12px;font-size:14px}
-section{background:var(--panel);border:1px solid var(--linea);border-radius:12px;padding:20px;margin:0 0 18px}
-.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-@media(max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.kpi{background:#0f0f11;border:1px solid var(--linea);border-radius:10px;padding:12px}
-.kpi b{display:block;font-size:24px;color:var(--oro2)}.kpi span{color:var(--gris);font-size:14px}
-table{width:100%;border-collapse:collapse;font-size:15px}
-td,th{border-bottom:1px solid var(--linea);padding:8px 6px;text-align:left;vertical-align:top}
-th{color:var(--gris);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:1px}
-.tw{overflow-x:auto}
-.piezas{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
-.pieza{background:#0f0f11;border:1px solid var(--linea);border-radius:10px;overflow:hidden}
-.pieza img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#000;cursor:zoom-in}
-.pieza div{padding:10px 12px;font-size:14px}.pieza b{display:block;font-size:15px}
-.pieza span{color:var(--gris)}
-.copy{background:#0f0f11;border:1px solid var(--linea);border-radius:10px;padding:14px;margin:0 0 12px;white-space:pre-line;font-size:15px}
-.copy .t{font:700 12px/1 Barlow;letter-spacing:2px;text-transform:uppercase;color:var(--oro2);display:block;margin-bottom:8px;white-space:normal}
-.dos{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:820px){.dos{grid-template-columns:1fr}}
-ul{margin:6px 0 0 20px;padding:0}li{margin:0 0 6px}
-.nota{color:var(--gris);font-size:14.5px}
+nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 12px;font-size:14px}
+section{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;margin:0 0 18px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}@media(max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:#0f0f11;border:1px solid var(--line);border-radius:10px;padding:12px}.kpi b{display:block;font-size:24px;color:var(--oro2)}.kpi span{color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:15px}td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:1px}.tw{overflow-x:auto}
+ul.l{margin:6px 0 0 20px;padding:0}ul.l li{margin:0 0 6px}.nota-p{color:var(--muted);font-size:14.5px}
 .rec{border-left:3px solid var(--oro2);padding:10px 14px;background:#0f0f11;border-radius:0 8px 8px 0;margin:10px 0}
-.item{border-top:1px solid var(--linea);padding:14px 0}.item:first-of-type{border:0;padding-top:0}
-.q{font-weight:700;margin:0 0 4px}.d{color:var(--gris);font-size:14.5px;margin:0 0 8px}
-.op{display:flex;gap:8px;flex-wrap:wrap}
-.op label{display:flex;gap:6px;align-items:center;background:#0f0f11;border:1px solid var(--linea);border-radius:6px;padding:6px 10px;font-size:14px;cursor:pointer}
-textarea{width:100%;min-height:60px;margin-top:8px;background:#0f0f11;color:var(--txt);border:1px solid var(--linea);border-radius:6px;padding:8px;font:14px Barlow}
-.btn{background:var(--oro);color:#fff;border:0;border-radius:8px;padding:12px 18px;font:700 15px Barlow;cursor:pointer;width:100%}
-#est{color:var(--gris);font-size:14px;text-align:center;margin-top:8px;min-height:20px}
-#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:16px;z-index:9}
-#lb img{max-width:100%;max-height:100%}#lb.on{display:flex}
+.ciudad{margin-top:22px}.ciudad+.ciudad{margin-top:40px;border-top:2px solid var(--oro);padding-top:22px}
+.ctit{font-size:28px;letter-spacing:3px;color:var(--oro2);margin:0}.csub{color:var(--muted);margin:2px 0 4px}
+.ad{background:#0f0f11;border:1px solid var(--line);border-radius:14px;margin-top:16px;overflow:hidden}
+.ad header{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.num{font:700 13px Barlow;background:var(--oro);color:#fff;min-width:38px;height:28px;padding:0 8px;border-radius:14px;display:grid;place-items:center;flex:none}
+.fecha{color:var(--muted);font-size:14px}
+.estado{margin-left:auto;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--warn-s);color:var(--warn);white-space:nowrap}
+.cuerpo{display:grid;grid-template-columns:minmax(0,400px) minmax(0,1fr);gap:22px;padding:16px}@media(max-width:860px){.cuerpo{grid-template-columns:1fr}}
+.media img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.dl{display:inline-block;margin-top:8px;font-size:14px;color:var(--ink);font-weight:600}
+.copy{min-width:0}.lbl{font:600 12px Barlow;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-top:14px}.lbl:first-child{margin-top:0}
+.hint{text-transform:none;letter-spacing:0;font-weight:400}
+.ed{border:1px dashed var(--line);border-radius:8px;padding:8px 10px;margin-top:4px;outline:none;white-space:pre-wrap}.ed.largo{min-height:120px}
+.ed:focus{border-color:var(--ink);border-style:solid}.ed.cambiado{border-color:var(--warn);border-style:solid}
+.btn{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:3px 12px;font-weight:600;font-size:14px;margin:4px 0 0}
+.acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.acciones button,.nota button,.todo button{font:600 15px Barlow;border-radius:8px;padding:9px 16px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.acciones .aprobar,.todo button{background:var(--ok);border-color:var(--ok);color:#fff}.acciones .aprobar.copy{background:var(--warn);border-color:var(--warn)}
+.nota[hidden],.deshacer[hidden],.todo button[hidden]{display:none}
+.nota{margin-top:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.nota textarea{font:15px Barlow;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}
+.aviso{margin:8px 0 0;font-size:14px;color:var(--ok);min-height:1em}
+.ad.aprobado{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok)}.ad.aprobado .estado{background:var(--ok-s);color:#7fd19b}
+.todo{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:12px 0 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#0f0f11}.todo .cuenta{font-weight:600}
+.chat{margin-top:18px;border-top:1px solid var(--line);padding-top:12px}.chat ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.chat .m{max-width:92%;padding:8px 12px;border-radius:12px;font-size:15px;line-height:1.45;white-space:pre-wrap}
+.chat .ale{align-self:flex-start;background:var(--warn-s);border-top-left-radius:3px}.chat .ale.ok{background:var(--ok-s)}
+.chat .resp{align-self:flex-end;background:var(--bg);border:1px solid var(--line);border-top-right-radius:3px}
+.chat .quien{display:block;font:600 12px Barlow;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}.chat .vacio{color:var(--muted);font-size:14px}
 </style></head><body><div class="wrap">
 <div class="eb">Juventus Training Experience 2027 · Campaña de Meta para aprobar</div>
 <h1>Prueba en San Francisco y Seattle</h1>
-<p class="sub">Propuesta de la campaña de prueba acordada en la reunión del 29-10: conseguir familias interesadas (leads) en las dos ciudades, para llamarlas y hacerles seguimiento por correo y SMS. Si alguna paga directamente, mejor. Abajo están la estructura, los anuncios, los textos, el seguimiento, cómo se evalúa a la semana y los puntos por confirmar.</p>
-<nav><a href="#resumen">Resumen</a><a href="#destino">Formulario: web o Meta</a><a href="#estructura">Estructura</a><a href="#anuncios">Anuncios</a><a href="#textos">Textos</a><a href="#seguimiento">Seguimiento</a><a href="#evaluacion">Evaluación</a><a href="#confirmar">Por confirmar</a></nav>
+<p class="sub">Campaña de prueba acordada en la reunión del 29-10: conseguir familias interesadas (leads) en las dos ciudades para llamarlas y seguirlas por correo y SMS; si alguna paga directamente, mejor. Cada anuncio se aprueba o se comenta en su bloque de ciudad. Nada se publica en Meta hasta que esté aprobado.</p>
+<nav><a href="#resumen">Resumen</a><a href="#estructura">Estructura</a><a href="#sf">Anuncios San Francisco</a><a href="#sea">Anuncios Seattle</a><a href="#seguimiento">Seguimiento</a><a href="#evaluacion">Evaluación</a></nav>
 
 <section id="resumen">
 <h2>Resumen</h2>
 <div class="kpis">
- <div class="kpi"><b>USD 10/día</b><span>USD 5 San Francisco + USD 5 Seattle</span></div>
- <div class="kpi"><b>7 días</b><span>prueba de USD ~70 y evaluación</span></div>
- <div class="kpi"><b>Lead</b><span>familia que deja sus datos en la web</span></div>
+ <div class="kpi"><b>USD 8/día</b><span>USD 4 San Francisco + USD 4 Seattle</span></div>
+ <div class="kpi"><b>7 días</b><span>prueba de USD ~56 y evaluación</span></div>
+ <div class="kpi"><b>Lead</b><span>familia que deja sus datos en el formulario de la web</span></div>
  <div class="kpi"><b>4 anuncios</b><span>por ciudad (+ video de Jesús después)</span></div>
 </div>
-<ul class="nota" style="margin-top:14px">
- <li>Cuenta: <b>Juventus Camps USA</b>, en una campaña aparte, sin mezclarla con ID Camps.</li>
- <li>Destino: <b>juventuscampsusa.com/experience</b>. La familia elige la fecha y el hotel y deja nombre, correo y teléfono, y queda registrada en la plataforma (sección Experience) con el origen del anuncio.</li>
+<ul class="l nota-p" style="margin-top:14px">
+ <li>Cuenta <b>Juventus Camps USA</b>, en una campaña aparte, sin mezclarla con ID Camps.</li>
+ <li><b>Formulario: el de la web</b> (juventuscampsusa.com/experience → "Register Now"). La familia elige fecha y hotel y deja nombre, correo y teléfono; el registro queda en la plataforma (sección Experience) con el anuncio de origen y Meta lo cuenta como Lead.</li>
  <li>Producto: 7 días en Italia, del 21 al 27 de marzo o del 4 al 10 de abril de 2027, para niños y niñas de 6 a 16 años. El jugador paga desde USD 2.200 y cada acompañante, desde USD 2.065, según el hotel. Los precios no van en los anuncios: se explican en la llamada.</li>
+ <li class="nota-p">Plan B: solo si a los 7 días no hay registros con buenos clics, se prueba un formulario instantáneo de Meta con preguntas de calificación.</li>
 </ul>
-</section>
-
-<section id="destino">
-<h2>¿Formulario en la web o formulario de Meta?</h2>
-<div class="rec"><b>Se propone: el formulario de la web</b> (el "Register Now" de la página de Experience), optimizando por el evento <b>Lead</b>, que ya existe para Experience.</div>
-<div class="tw"><table>
-<tr><th></th><th>Web (propuesto)</th><th>Formulario instantáneo de Meta</th></tr>
-<tr><td>Calidad del lead</td><td>Más alta: la familia ve el itinerario, los hoteles y lo que incluye antes de dejar sus datos.</td><td>Más baja: se llena en 2 toques sin salir de Instagram, y mucha gente no recuerda haberlo llenado.</td></tr>
-<tr><td>Costo por lead</td><td>Más alto (se esperan USD 15–40).</td><td>Más bajo (USD 5–15), pero con más contactos que no contestan.</td></tr>
-<tr><td>Dónde llega</td><td>A la plataforma de inscripción, con el anuncio de origen, igual que los ID Camps.</td><td>A Meta: hay que descargarlo o conectarlo aparte.</td></tr>
-<tr><td>Pago directo</td><td>Posible: el mismo registro sigue al pago.</td><td>No: siempre necesita la llamada.</td></tr>
-</table></div>
-<p class="nota">Con un paquete de USD 4.000 o más por familia (jugador y un acompañante), el lead que vale es el que ya conoce el programa. <b>Plan B:</b> si en 7 días la web no trae ningún registro y los clics son buenos (CTR de enlace del 1 % o más), se prueba un formulario de Meta "de mayor intención" con 3 preguntas: edad del jugador, fecha preferida y si viajaría un familiar.</p>
 </section>
 
 <section id="estructura">
@@ -81,11 +76,11 @@ textarea{width:100%;min-height:60px;margin-top:8px;background:#0f0f11;color:var(
 <div class="tw"><table>
 <tr><th>Nivel</th><th>Configuración</th></tr>
 <tr><td>Campaña</td><td><b>JTE | LEADS | SF-SEA | PRUEBA</b> · objetivo Clientes potenciales, conversión en el sitio web, evento <b>Lead</b> · presupuesto por conjunto, para que cada ciudad tenga su prueba</td></tr>
-<tr><td>Conjunto 1</td><td><b>SF | BAY AREA</b> · USD 5/día · San Francisco + 25 millas (cubre SF, Oakland, Berkeley, Marin y la Península hasta San Mateo)</td></tr>
-<tr><td>Conjunto 2</td><td><b>SEA | SEATTLE METRO</b> · USD 5/día · Seattle + 20 millas (cubre Bellevue, Redmond, Kirkland y Shoreline)</td></tr>
-<tr><td>Público</td><td>"Vive o estuvo recientemente" en la zona (la única opción válida hoy) · Advantage+ con sugerencia de 30 a 55 años (padres) · todos los géneros · inglés · sin intereses (con este presupuesto, el público abierto aprende más rápido)</td></tr>
-<tr><td>Ubicaciones</td><td>Feed, Stories y Reels de Instagram y Facebook · <b>sin Audience Network</b> (en esta cuenta trajo clics accidentales)</td></tr>
-<tr><td>Anuncios</td><td>4 por conjunto, los mismos en las dos ciudades salvo la pieza con el nombre de la ciudad · el video de Jesús se suma cuando esté (anuncio nuevo, sin tocar los otros)</td></tr>
+<tr><td>Conjunto SF</td><td><b>SF | BAY AREA</b> · USD 4/día · San Francisco + 25 millas (SF, Oakland, Berkeley, Marin y la Península hasta San Mateo)</td></tr>
+<tr><td>Conjunto SEA</td><td><b>SEA | SEATTLE METRO</b> · USD 4/día · Seattle + 20 millas (Bellevue, Redmond, Kirkland y Shoreline)</td></tr>
+<tr><td>Público</td><td>"Vive o estuvo recientemente" en la zona · Advantage+ con sugerencia de 30 a 55 años (padres) · todos los géneros · inglés · sin intereses</td></tr>
+<tr><td>Ubicaciones</td><td>Feed, Stories y Reels de Instagram y Facebook · <b>sin Audience Network</b></td></tr>
+<tr><td>Anuncios</td><td>4 por conjunto (abajo, por ciudad) · el video de Jesús se suma cuando esté, como anuncio nuevo</td></tr>
 <tr><td>Mejoras automáticas</td><td>Sin traducción automática ni "optimizar destino del sitio web"</td></tr>
 <tr><td>Enlace</td><td>juventuscampsusa.com/experience?utm_source=meta&amp;utm_medium=paid&amp;utm_campaign=jte_sf_sea&amp;utm_content=&lbrace;&lbrace;ad.name&rbrace;&rbrace;</td></tr>
 <tr><td>Fechas</td><td>Arranca cuando se apruebe · evaluación el día 7 · la promoción de la JTE va hasta la primera semana de febrero</td></tr>
@@ -93,52 +88,169 @@ textarea{width:100%;min-height:60px;margin-top:8px;background:#0f0f11;color:var(
 </section>
 
 <section id="anuncios">
-<h2>Anuncios (4:5)</h2>
-<p class="nota">Fotos reales de la experiencia en Italia, con la camiseta de esta temporada. Toca una imagen para verla en grande.</p>
-<div class="piezas">
- <div class="pieza"><img src="img/JTE1_hero.jpg" alt="Anuncio 1"><div><b>1 · Hero</b><span>"Train in Italy with Juventus". Las dos fechas. Va en las dos ciudades.</span></div></div>
- <div class="pieza"><img src="img/JTE2_incluye.jpg" alt="Anuncio 2"><div><b>2 · Qué incluye</b><span>7 días: entrenamientos con coaches de Juventus, Training Center, Stadium y Museo, hotel. Va en las dos ciudades.</span></div></div>
- <div class="pieza"><img src="img/JTE3_sf.jpg" alt="Anuncio 3 SF"><div><b>3 · From San Francisco to Italy</b><span>Solo en el conjunto de San Francisco.</span></div></div>
- <div class="pieza"><img src="img/JTE3_sea.jpg" alt="Anuncio 3 Seattle"><div><b>3 · From Seattle to Italy</b><span>Solo en el conjunto de Seattle.</span></div></div>
- <div class="pieza"><img src="img/JTE4_chance.jpg" alt="Anuncio 4"><div><b>4 · The chance of a lifetime</b><span>Muestra que también es para niñas. Va en las dos ciudades.</span></div></div>
-</div>
-<p class="nota" style="margin-top:12px">Después: <b>video corto de Jesús</b> (20 a 40 s) invitando a la experiencia. Es el anuncio que más confianza da en una compra de este valor y se suma como 5.º anuncio en los dos conjuntos.</p>
-</section>
-
-<section id="textos">
-<h2>Textos de los anuncios (inglés)</h2>
-<p class="nota">El llamado a la acción va dentro del texto. Tono de privilegio ("tu hijo puede ser uno de ellos"), sin precios.</p>
-<div class="dos">
-<div class="copy"><span class="t">Texto principal A · San Francisco</span>This spring, a small group of young players from the Bay Area will train where Juventus trains.
+<h2>Anuncios por ciudad</h2>
+<p class="nota-p">Cada ciudad ve sus 4 anuncios. El hero, "qué incluye" y "the chance of a lifetime" van en las dos, con el texto adaptado a cada ciudad; la pieza con el nombre de la ciudad solo va en la suya. Los textos se pueden corregir directamente y aprobar con el texto corregido.</p>
+<div class="todo"><span class="cuenta"></span><button type="button">Aprobar todo lo que falta</button></div>
+<div class="ciudad" id="sf"><h3 class="ctit">SAN FRANCISCO</h3><p class="csub">Conjunto SF · San Francisco + 25 millas · USD 4/día · estos 4 anuncios son los que ve una familia de Bay Area</p>
+<article class="ad" data-id="SF_1_hero">
+ <header><span class="num">SF</span><div><h3>1 · Hero</h3><span class="fecha">Train in Italy with Juventus: las dos fechas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE1_hero.jpg?v=2" alt="Anuncio 1 · Hero · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE1_hero.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">This spring, a small group of young players from the Bay Area will train where Juventus trains.
 
 7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium &amp; Juventus Museum tour, and international friendly matches (subject to availability).
 
 Two dates: March 21–27 or April 4–10, 2027. Boys &amp; girls, ages 6–16. Spots are limited.
 
-👉 Leave your details on the page and our team will call you with the full itinerary and packages.</div>
-<div class="copy"><span class="t">Texto principal A · Seattle</span>This spring, a small group of young players from the Seattle area will train where Juventus trains.
+👉 Leave your details on the page and our team will call you with the full itinerary and packages.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">Train with Juventus in Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en San Francisco"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article>
+<article class="ad" data-id="SF_2_incluye">
+ <header><span class="num">SF</span><div><h3>2 · Qué incluye</h3><span class="fecha">Los 7 días, punto por punto.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE2_incluye.jpg?v=2" alt="Anuncio 2 · Qué incluye · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE2_incluye.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">What 7 days inside the Juventus world look like:
+
+✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)
+✅ Allianz Stadium &amp; Juventus Museum tour
+✅ International friendly matches (subject to availability)
+✅ 6 nights in Italy, hotel included
+
+For Bay Area players ages 6–16. March 21–27 or April 4–10, 2027.
+
+👉 Leave your details on the page and our team will call you with the itinerary and packages.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">7 days inside the Juventus world</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en San Francisco"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article>
+<article class="ad" data-id="SF_3_ciudad">
+ <header><span class="num">SF</span><div><h3>3 · From San Francisco to Italy</h3><span class="fecha">La pieza con el nombre de la ciudad (solo en este conjunto).</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE3_sf.jpg?v=2" alt="Anuncio 3 · From San Francisco to Italy · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE3_sf.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">From San Francisco to Italy. ✈️
+
+This spring, a small group of Bay Area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.
+
+Your player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.
+
+👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">From San Francisco to Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en San Francisco"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article>
+<article class="ad" data-id="SF_4_chance">
+ <header><span class="num">SF</span><div><h3>4 · The chance of a lifetime</h3><span class="fecha">Muestra que también es para niñas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE4_chance.jpg?v=2" alt="Anuncio 4 · The chance of a lifetime · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE4_chance.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.
+
+Boys and girls from the Bay Area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.
+
+👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">The chance of a lifetime</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en San Francisco"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article></div><div class="ciudad" id="sea"><h3 class="ctit">SEATTLE</h3><p class="csub">Conjunto SEA · Seattle + 20 millas · USD 4/día · estos 4 anuncios son los que ve una familia de Seattle area</p>
+<article class="ad" data-id="SEA_1_hero">
+ <header><span class="num">SEA</span><div><h3>1 · Hero</h3><span class="fecha">Train in Italy with Juventus: las dos fechas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE1_hero.jpg?v=2" alt="Anuncio 1 · Hero · SEATTLE" loading="lazy"><a class="dl" href="img/JTE1_hero.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">This spring, a small group of young players from the Seattle area will train where Juventus trains.
 
 7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium &amp; Juventus Museum tour, and international friendly matches (subject to availability).
 
 Two dates: March 21–27 or April 4–10, 2027. Boys &amp; girls, ages 6–16. Spots are limited.
 
-👉 Leave your details on the page and our team will call you with the full itinerary and packages.</div>
-</div>
-<div class="copy"><span class="t">Texto principal B · corto (las dos ciudades)</span>7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.
+👉 Leave your details on the page and our team will call you with the full itinerary and packages.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">Train with Juventus in Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en Seattle"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article>
+<article class="ad" data-id="SEA_2_incluye">
+ <header><span class="num">SEA</span><div><h3>2 · Qué incluye</h3><span class="fecha">Los 7 días, punto por punto.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE2_incluye.jpg?v=2" alt="Anuncio 2 · Qué incluye · SEATTLE" loading="lazy"><a class="dl" href="img/JTE2_incluye.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">What 7 days inside the Juventus world look like:
 
-Your player could be one of the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10.
+✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)
+✅ Allianz Stadium &amp; Juventus Museum tour
+✅ International friendly matches (subject to availability)
+✅ 6 nights in Italy, hotel included
 
-👉 Request the details here and our team will contact you.</div>
-<div class="dos">
-<div class="copy"><span class="t">Título</span>Train with Juventus in Italy</div>
-<div class="copy"><span class="t">Descripción · Botón</span>Spring 2027 · Ages 6–16 · Limited spots
-Botón: Learn more</div>
-</div>
+For Seattle-area players ages 6–16. March 21–27 or April 4–10, 2027.
+
+👉 Leave your details on the page and our team will call you with the itinerary and packages.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">7 days inside the Juventus world</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en Seattle"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article>
+<article class="ad" data-id="SEA_3_ciudad">
+ <header><span class="num">SEA</span><div><h3>3 · From Seattle to Italy</h3><span class="fecha">La pieza con el nombre de la ciudad (solo en este conjunto).</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE3_sea.jpg?v=2" alt="Anuncio 3 · From Seattle to Italy · SEATTLE" loading="lazy"><a class="dl" href="img/JTE3_sea.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">From Seattle to Italy. ✈️
+
+This spring, a small group of Seattle-area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.
+
+Your player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.
+
+👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">From Seattle to Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en Seattle"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article>
+<article class="ad" data-id="SEA_4_chance">
+ <header><span class="num">SEA</span><div><h3>4 · The chance of a lifetime</h3><span class="fecha">Muestra que también es para niñas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <div class="cuerpo">
+  <div class="media"><img src="img/JTE4_chance.jpg?v=2" alt="Anuncio 4 · The chance of a lifetime · SEATTLE" loading="lazy"><a class="dl" href="img/JTE4_chance.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.
+
+Boys and girls from the Seattle area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.
+
+👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">The chance of a lifetime</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
+   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
+   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en Seattle"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
+   <p class="aviso" data-aviso aria-live="polite"></p>
+   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
+  </div>
+ </div>
+</article></div>
 </section>
 
 <section id="seguimiento">
 <h2>Seguimiento de cada lead</h2>
-<p class="nota">En una compra de este valor, la llamada es la que vende. Correos y SMS la acompañan: 1 mensaje al día como máximo y ninguno repetido. Ningún mensaje pide que respondan: todos cierran con el enlace a la página. Quien paga sale del seguimiento.</p>
+<p class="nota-p">En una compra de este valor, la llamada es la que vende. Correos y SMS la acompañan: 1 mensaje al día como máximo y ninguno repetido. Ningún mensaje pide que respondan: todos cierran con el enlace a la página. Quien paga sale del seguimiento.</p>
 <div class="tw"><table>
 <tr><th>Cuándo</th><th>Canal</th><th>Qué</th></tr>
 <tr><td>Mismo día</td><td>Aviso interno</td><td>Cada lead nuevo de SF o Seattle se le pasa a quien llama (nombre, ciudad y fecha elegida), sin pasar datos por ninguna web.</td></tr>
@@ -152,47 +264,59 @@ Botón: Learn more</div>
 </section>
 
 <section id="evaluacion">
-<h2>Evaluación a los 7 días (USD ~70)</h2>
-<ul>
- <li><b>Se mide:</b> familias registradas en la plataforma con origen en este anuncio (únicas), costo por registro, cuántas se contactaron, cuántas están realmente interesadas y pagos.</li>
- <li><b>3 o más registros y al menos 1 interesado de verdad:</b> sigue una segunda semana, se suma el video de Jesús y se evalúa si se sube el presupuesto.</li>
- <li><b>1 o 2 registros:</b> sigue otra semana sin cambios grandes. Con tan pocos resultados no se juzga; se cambia una sola cosa a la vez.</li>
- <li><b>0 registros con buenos clics (CTR de enlace del 1 % o más):</b> el problema está en la página; se prueba el plan B (formulario de Meta).</li>
+<h2>Evaluación a los 7 días (USD ~56)</h2>
+<ul class="l">
+ <li><b>Se mide:</b> familias registradas en la plataforma con origen en este anuncio (únicas), costo por registro, cuántas se contactaron, cuántas están realmente interesadas y pagos. Con USD 56 se esperan entre 1 y 4 registros en total.</li>
+ <li><b>2 o más registros y al menos 1 interesado de verdad:</b> sigue una segunda semana, se suma el video de Jesús y se evalúa si se sube el presupuesto.</li>
+ <li><b>1 registro:</b> sigue otra semana sin cambios grandes. Con tan pocos resultados no se juzga; se cambia una sola cosa a la vez.</li>
+ <li><b>0 registros con buenos clics (CTR de enlace del 1 % o más):</b> el problema está en la página; se prueba el plan B.</li>
  <li><b>0 registros con pocos clics:</b> el problema está en los anuncios; se cambia el ángulo o se sube el video de Jesús.</li>
  <li><b>Si una ciudad rinde el doble que la otra:</b> se le pasa el presupuesto.</li>
  <li><b>Pausas:</b> ningún anuncio antes de 7 días, de a uno y nunca el único activo.</li>
 </ul>
 </section>
-
-<section id="confirmar">
-<h2>Para confirmar</h2>
-<div class="item" data-k="aprobacion"><p class="q">1. Estructura y presupuesto (USD 5 + USD 5 al día, 7 días, objetivo Lead en la web)</p>
- <div class="op"><label><input type="radio" name="aprobacion" value="Aprobado"> Aprobado</label><label><input type="radio" name="aprobacion" value="Con cambios"> Con cambios</label></div><textarea placeholder="Nota (opcional)"></textarea></div>
-<div class="item" data-k="anuncios"><p class="q">2. Anuncios (las 5 piezas)</p>
- <div class="op"><label><input type="radio" name="anuncios" value="Aprobados"> Aprobados</label><label><input type="radio" name="anuncios" value="Con cambios"> Con cambios</label></div><textarea placeholder="¿Cuál cambiar y qué?"></textarea></div>
-<div class="item" data-k="textos"><p class="q">3. Textos (A por ciudad, B corto, título y descripción)</p>
- <div class="op"><label><input type="radio" name="textos" value="Aprobados"> Aprobados</label><label><input type="radio" name="textos" value="Con cambios"> Con cambios</label></div><textarea placeholder="Nota (opcional)"></textarea></div>
-<div class="item" data-k="llama"><p class="q">4. ¿Quién llama a los leads y a quién se le avisa?</p><p class="d">En la reunión del 23-10, Jesús pidió que los leads le lleguen a él.</p>
- <div class="op"><label><input type="radio" name="llama" value="Jesús"> Jesús</label><label><input type="radio" name="llama" value="Alessandro"> Alessandro</label><label><input type="radio" name="llama" value="Otra persona"> Otra persona</label></div><textarea placeholder="Nombre y WhatsApp donde se le avisa"></textarea></div>
-<div class="item" data-k="cupos"><p class="q">5. Cupos reales por fecha y fecha de cierre de inscripciones</p><p class="d">En la plataforma aparecen 300 por fecha. Los anuncios dicen "limited spots", sin número.</p><textarea placeholder="Ej.: 40 por fecha, cierre el 5 de febrero"></textarea></div>
-<div class="item" data-k="correos"><p class="q">6. Correos y SMS del seguimiento</p><p class="d">Si se aprueban, se arman los 3 correos y el SMS y se mandan para revisión antes de activarlos.</p>
- <div class="op"><label><input type="radio" name="correos" value="Sí, armarlos"> Sí, armarlos</label><label><input type="radio" name="correos" value="Solo llamadas por ahora"> Solo llamadas por ahora</label></div></div>
-<div class="item" data-k="video"><p class="q">7. Video de Jesús: ¿para cuándo?</p><textarea placeholder="Fecha aproximada"></textarea></div>
-<button class="btn" id="copiar" type="button">Copiar respuestas</button><div id="est"></div>
-</section>
-<p class="nota">Al terminar, toca "Copiar respuestas" y pégalas por WhatsApp. Nada se publica en Meta hasta que se apruebe.</p>
+<p class="nota-p">Para confirmar en una nota (en cualquier anuncio o por WhatsApp): quién llama a los leads, cupo real por fecha y fecha de cierre de inscripciones, si se arman los correos y SMS del seguimiento y para cuándo el video de Jesús.</p>
 </div>
-<div id="lb"><img alt=""></div>
 <script>
-document.querySelectorAll('.pieza img').forEach(function(i){i.addEventListener('click',function(){var l=document.getElementById('lb');l.querySelector('img').src=i.src;l.classList.add('on');});});
-document.getElementById('lb').addEventListener('click',function(){this.classList.remove('on');});
-document.getElementById('copiar').addEventListener('click',function(){
- var out=['Campaña JTE SF + Seattle · respuestas'];
- document.querySelectorAll('.item').forEach(function(it){
-  var q=it.querySelector('.q').textContent, r=it.querySelector('input:checked'), t=it.querySelector('textarea');
-  out.push(q+': '+(r?r.value:'—')+(t&&t.value.trim()?' · '+t.value.trim():''));});
- var txt=out.join('\n'), est=document.getElementById('est');
- (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){est.textContent='Copiado. Pégalo en WhatsApp.';},function(){est.textContent='No se pudo copiar automáticamente; selecciona y copia:';var p=document.createElement('textarea');p.value=txt;est.appendChild(p);});
-});
+const CFG={"accion": "https://docs.google.com/forms/d/e/1FAIpQLSeGUY8Cv9Ea08X9HkdznY9pzVoUc4Gj-GdymsVTFP86wbE5sw/formResponse", "entry": {"pieza": 333677581, "cuenta": 724853821, "autor": 299801437, "comentario": 1175231019, "copy_corregido": 1649408514, "copy_original": 1637675582, "enviado": 909195940, "tipo": 1605073129, "zona": 1831673234, "fila": 1327618412}, "cuenta": "jte_sf_seattle"};
+const ORIG={"SF_1_hero": {"texto": "This spring, a small group of young players from the Bay Area will train where Juventus trains.\n\n7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium & Juventus Museum tour, and international friendly matches (subject to availability).\n\nTwo dates: March 21–27 or April 4–10, 2027. Boys & girls, ages 6–16. Spots are limited.\n\n👉 Leave your details on the page and our team will call you with the full itinerary and packages.", "titulo": "Train with Juventus in Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_2_incluye": {"texto": "What 7 days inside the Juventus world look like:\n\n✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)\n✅ Allianz Stadium & Juventus Museum tour\n✅ International friendly matches (subject to availability)\n✅ 6 nights in Italy, hotel included\n\nFor Bay Area players ages 6–16. March 21–27 or April 4–10, 2027.\n\n👉 Leave your details on the page and our team will call you with the itinerary and packages.", "titulo": "7 days inside the Juventus world", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_3_ciudad": {"texto": "From San Francisco to Italy. ✈️\n\nThis spring, a small group of Bay Area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.\n\nYour player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "From San Francisco to Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_4_chance": {"texto": "7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.\n\nBoys and girls from the Bay Area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "The chance of a lifetime", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_1_hero": {"texto": "This spring, a small group of young players from the Seattle area will train where Juventus trains.\n\n7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium & Juventus Museum tour, and international friendly matches (subject to availability).\n\nTwo dates: March 21–27 or April 4–10, 2027. Boys & girls, ages 6–16. Spots are limited.\n\n👉 Leave your details on the page and our team will call you with the full itinerary and packages.", "titulo": "Train with Juventus in Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_2_incluye": {"texto": "What 7 days inside the Juventus world look like:\n\n✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)\n✅ Allianz Stadium & Juventus Museum tour\n✅ International friendly matches (subject to availability)\n✅ 6 nights in Italy, hotel included\n\nFor Seattle-area players ages 6–16. March 21–27 or April 4–10, 2027.\n\n👉 Leave your details on the page and our team will call you with the itinerary and packages.", "titulo": "7 days inside the Juventus world", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_3_ciudad": {"texto": "From Seattle to Italy. ✈️\n\nThis spring, a small group of Seattle-area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.\n\nYour player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "From Seattle to Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_4_chance": {"texto": "7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.\n\nBoys and girls from the Seattle area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "The chance of a lifetime", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}};
+const LSK='jte_sf_sea_v1';
+const LS={get(){try{return JSON.parse(localStorage.getItem(LSK)||'{}')}catch(e){return {}}},set(v){try{localStorage.setItem(LSK,JSON.stringify(v))}catch(e){}}};
+const norm=t=>(t||'').replace(/\u00a0/g,' ').split('\n').map(l=>l.trim()).join('\n').replace(/\n{3,}/g,'\n\n').trim();
+const campos=ad=>[...ad.querySelectorAll('[data-campo]')].map(e=>e.dataset.campo);
+function leer(ad){const v={};campos(ad).forEach(c=>v[c]=norm(ad.querySelector('[data-campo="'+c+'"]').innerText));return v}
+function cambiado(ad){const o=ORIG[ad.dataset.id],v=leer(ad);return campos(ad).some(c=>v[c]!==norm(o[c]))}
+function pintar(ad){const c=cambiado(ad),b=ad.querySelector('.aprobar');b.textContent=c?'Aprobar con texto corregido':'Aprobar';b.classList.toggle('copy',c);
+  ad.querySelector('.deshacer').hidden=!c;ad.querySelectorAll('.ed').forEach(e=>e.classList.toggle('cambiado',norm(e.innerText)!==norm(ORIG[ad.dataset.id][e.dataset.campo])))}
+async function enviar(reg){const f=new URLSearchParams();for(const k in CFG.entry)f.append('entry.'+CFG.entry[k],reg[k]??'');
+  try{await fetch(CFG.accion,{method:'POST',mode:'no-cors',body:f});return true}catch(e){return false}}
+function marcar(ad,txt){ad.classList.add('aprobado');ad.querySelector('[data-estado]').textContent=txt}
+async function aprobar(ad){const id=ad.dataset.id,c=cambiado(ad),v=leer(ad),o=ORIG[id];
+  const reg={pieza:id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:c?'aprobado_copy':'aprobado',comentario:'',copy_original:JSON.stringify(o),copy_corregido:c?JSON.stringify(v):'',enviado:new Date().toISOString(),zona:'',fila:''};
+  const av=ad.querySelector('[data-aviso]');av.textContent='Guardando…';
+  if(!await enviar(reg)){av.textContent='No se pudo guardar. Revise la conexión e intente de nuevo.';return}
+  const st=LS.get();st[id]={tipo:reg.tipo,v:c?v:null,hora:reg.enviado};LS.set(st);
+  marcar(ad,c?'Aprobado con texto corregido':'Aprobado');av.textContent='Guardado.';contar()}
+function burbuja(ul,cls,quien,t){const v=ul.querySelector('.vacio');if(v)v.remove();const li=document.createElement('li');li.className='m '+cls;
+  const q=document.createElement('span');q.className='quien';q.textContent=quien;li.append(q,document.createTextNode(t));ul.append(li)}
+async function nota(ad){const ta=ad.querySelector('.nota textarea'),t=ta.value.trim();if(!t)return;const av=ad.querySelector('[data-aviso]');av.textContent='Enviando…';
+  const ok=await enviar({pieza:ad.dataset.id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:'comentario',comentario:t,copy_original:'',copy_corregido:cambiado(ad)?JSON.stringify(leer(ad)):'',enviado:new Date().toISOString(),zona:'',fila:''});
+  av.textContent=ok?'Nota enviada.':'No se pudo enviar la nota.';if(ok){ta.value='';ad.querySelector('.nota').hidden=true;burbuja(ad.querySelector('[data-chat]'),'ale','Alessandro · ahora',t)}}
+function contar(){const n=document.querySelectorAll('.ad').length,ap=document.querySelectorAll('.ad.aprobado').length;
+  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' anuncios aprobados (4 por ciudad)';document.querySelector('.todo button').hidden=ap===n}
+document.querySelectorAll('.ad').forEach(ad=>{ad.querySelectorAll('.ed').forEach(e=>e.addEventListener('input',()=>pintar(ad)));
+  ad.addEventListener('click',ev=>{const a=ev.target.closest('[data-accion]');if(!a)return;const k=a.dataset.accion;
+    if(k==='aprobar')aprobar(ad);
+    else if(k==='nota'){const n=ad.querySelector('.nota');n.hidden=!n.hidden;if(!n.hidden)n.querySelector('textarea').focus()}
+    else if(k==='enviar-nota')nota(ad);
+    else if(k==='restaurar'){const o=ORIG[ad.dataset.id];campos(ad).forEach(c=>ad.querySelector('[data-campo="'+c+'"]').innerText=o[c]);pintar(ad)}})});
+document.querySelector('.todo button').addEventListener('click',async()=>{for(const ad of document.querySelectorAll('.ad:not(.aprobado)'))await aprobar(ad)});
+function aplicar(st){for(const id in st){const ad=document.querySelector('.ad[data-id="'+id+'"]');if(!ad)continue;const x=st[id];
+  if(x.v){campos(ad).forEach(c=>{if(x.v[c]!=null)ad.querySelector('[data-campo="'+c+'"]').innerText=x.v[c]});pintar(ad)}
+  if(x.tipo&&x.tipo.indexOf('aprobado')===0)marcar(ad,x.tipo==='aprobado_copy'?'Aprobado con texto corregido':'Aprobado')}contar()}
+aplicar(LS.get());
+fetch('estado.json?t='+Date.now()).then(r=>r.ok?r.json():{}).then(j=>{if(j&&typeof j==='object')aplicar(j)}).catch(()=>{});
+fetch('notas.json?t='+Date.now()).then(r=>r.ok?r.json():[]).then(l=>{(l||[]).forEach(n=>{const ad=document.querySelector('.ad[data-id="'+n.pieza+'"]');if(!ad)return;
+  burbuja(ad.querySelector('[data-chat]'),n.de==='resp'?'resp':('ale'+(n.ok?' ok':'')),n.quien,n.texto)})}).catch(()=>{});
 </script>
 </body></html>
