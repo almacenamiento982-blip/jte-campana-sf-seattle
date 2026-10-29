@@ -49,6 +49,7 @@ ul.l{margin:6px 0 0 20px;padding:0}ul.l li{margin:0 0 6px}.nota-p{color:var(--mu
 .chat .ale{align-self:flex-start;background:var(--warn-s);border-top-left-radius:3px}.chat .ale.ok{background:var(--ok-s)}
 .chat .resp{align-self:flex-end;background:var(--bg);border:1px solid var(--line);border-top-right-radius:3px}
 .chat .quien{display:block;font:600 12px Barlow;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}.chat .vacio{color:var(--muted);font-size:14px}
+.reserva{display:flex;gap:12px;align-items:center;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}.reserva img{width:84px;aspect-ratio:4/5;object-fit:cover;border-radius:6px;border:1px solid var(--line);flex:none}
 </style></head><body><div class="wrap">
 <div class="eb">Juventus Training Experience 2027 · Campaña de Meta para aprobar</div>
 <h1>Prueba en San Francisco y Seattle</h1>
@@ -61,7 +62,7 @@ ul.l{margin:6px 0 0 20px;padding:0}ul.l li{margin:0 0 6px}.nota-p{color:var(--mu
  <div class="kpi"><b>USD 8/día</b><span>USD 4 San Francisco + USD 4 Seattle</span></div>
  <div class="kpi"><b>7 días</b><span>prueba de USD ~56 y evaluación</span></div>
  <div class="kpi"><b>Lead</b><span>familia que deja sus datos en el formulario de la web</span></div>
- <div class="kpi"><b>4 anuncios</b><span>por ciudad (+ video de Jesús después)</span></div>
+ <div class="kpi"><b>3 anuncios</b><span>por ciudad (+ video de Jesús después)</span></div>
 </div>
 <ul class="l nota-p" style="margin-top:14px">
  <li>Cuenta <b>Juventus Camps USA</b>, en una campaña aparte, sin mezclarla con ID Camps.</li>
@@ -80,7 +81,7 @@ ul.l{margin:6px 0 0 20px;padding:0}ul.l li{margin:0 0 6px}.nota-p{color:var(--mu
 <tr><td>Conjunto SEA</td><td><b>SEA | SEATTLE METRO</b> · USD 4/día · Seattle + 20 millas (Bellevue, Redmond, Kirkland y Shoreline)</td></tr>
 <tr><td>Público</td><td>"Vive o estuvo recientemente" en la zona · Advantage+ con sugerencia de 30 a 55 años (padres) · todos los géneros · inglés · sin intereses</td></tr>
 <tr><td>Ubicaciones</td><td>Feed, Stories y Reels de Instagram y Facebook · <b>sin Audience Network</b></td></tr>
-<tr><td>Anuncios</td><td>4 por conjunto (abajo, por ciudad) · el video de Jesús se suma cuando esté, como anuncio nuevo</td></tr>
+<tr><td>Anuncios</td><td><b>3 por conjunto</b> (con USD 4/día, más anuncios reparten demasiado poco gasto para que Meta aprenda): la pieza de su ciudad, "qué incluye" y "the chance of a lifetime" (grupo/ciudad, información, niña) · el video de Jesús se suma cuando esté, como anuncio nuevo · el hero queda de reserva</td></tr>
 <tr><td>Mejoras automáticas</td><td>Sin traducción automática ni "optimizar destino del sitio web"</td></tr>
 <tr><td>Enlace</td><td>juventuscampsusa.com/experience?utm_source=meta&amp;utm_medium=paid&amp;utm_campaign=jte_sf_sea&amp;utm_content=&lbrace;&lbrace;ad.name&rbrace;&rbrace;</td></tr>
 <tr><td>Fechas</td><td>Arranca cuando se apruebe · evaluación el día 7 · la promoción de la JTE va hasta la primera semana de febrero</td></tr>
@@ -89,20 +90,20 @@ ul.l{margin:6px 0 0 20px;padding:0}ul.l li{margin:0 0 6px}.nota-p{color:var(--mu
 
 <section id="anuncios">
 <h2>Anuncios por ciudad</h2>
-<p class="nota-p">Cada ciudad ve sus 4 anuncios. El hero, "qué incluye" y "the chance of a lifetime" van en las dos, con el texto adaptado a cada ciudad; la pieza con el nombre de la ciudad solo va en la suya. Los textos se pueden corregir directamente y aprobar con el texto corregido.</p>
+<p class="nota-p">Cada ciudad ve 3 anuncios: la pieza con el nombre de su ciudad (solo en la suya), "qué incluye" y "the chance of a lifetime" (en las dos, con el texto adaptado a cada ciudad). Los textos se pueden corregir directamente y aprobar con el texto corregido.</p>
 <div class="todo"><span class="cuenta"></span><button type="button">Aprobar todo lo que falta</button></div>
-<div class="ciudad" id="sf"><h3 class="ctit">SAN FRANCISCO</h3><p class="csub">Conjunto SF · San Francisco + 25 millas · USD 4/día · estos 4 anuncios son los que ve una familia de Bay Area</p>
-<article class="ad" data-id="SF_1_hero">
- <header><span class="num">SF</span><div><h3>1 · Hero</h3><span class="fecha">Train in Italy with Juventus: las dos fechas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+<div class="ciudad" id="sf"><h3 class="ctit">SAN FRANCISCO</h3><p class="csub">Conjunto SF · San Francisco + 25 millas · USD 4/día · estos 3 anuncios son los que ve una familia de Bay Area</p>
+<article class="ad" data-id="SF_3_ciudad">
+ <header><span class="num">SF</span><div><h3>From San Francisco to Italy</h3><span class="fecha">Grupo + ciudad: la pieza con el nombre de la ciudad (solo en este conjunto).</span></div><span class="estado" data-estado>Por aprobar</span></header>
  <div class="cuerpo">
-  <div class="media"><img src="img/JTE1_hero.jpg?v=2" alt="Anuncio 1 · Hero · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE1_hero.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
-  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">This spring, a small group of young players from the Bay Area will train where Juventus trains.
+  <div class="media"><img src="img/JTE3_sf.jpg?v=2" alt="Anuncio From San Francisco to Italy · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE3_sf.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">From San Francisco to Italy. ✈️
 
-7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium &amp; Juventus Museum tour, and international friendly matches (subject to availability).
+This spring, a small group of Bay Area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.
 
-Two dates: March 21–27 or April 4–10, 2027. Boys &amp; girls, ages 6–16. Spots are limited.
+Your player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.
 
-👉 Leave your details on the page and our team will call you with the full itinerary and packages.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">Train with Juventus in Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">From San Francisco to Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
    <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
    <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
    <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en San Francisco"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
@@ -112,9 +113,9 @@ Two dates: March 21–27 or April 4–10, 2027. Boys &amp; girls, ages 6–16. S
  </div>
 </article>
 <article class="ad" data-id="SF_2_incluye">
- <header><span class="num">SF</span><div><h3>2 · Qué incluye</h3><span class="fecha">Los 7 días, punto por punto.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <header><span class="num">SF</span><div><h3>Qué incluye</h3><span class="fecha">Información: los 7 días, punto por punto.</span></div><span class="estado" data-estado>Por aprobar</span></header>
  <div class="cuerpo">
-  <div class="media"><img src="img/JTE2_incluye.jpg?v=2" alt="Anuncio 2 · Qué incluye · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE2_incluye.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="media"><img src="img/JTE2_incluye.jpg?v=2" alt="Anuncio Qué incluye · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE2_incluye.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
   <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">What 7 days inside the Juventus world look like:
 
 ✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)
@@ -133,29 +134,10 @@ For Bay Area players ages 6–16. March 21–27 or April 4–10, 2027.
   </div>
  </div>
 </article>
-<article class="ad" data-id="SF_3_ciudad">
- <header><span class="num">SF</span><div><h3>3 · From San Francisco to Italy</h3><span class="fecha">La pieza con el nombre de la ciudad (solo en este conjunto).</span></div><span class="estado" data-estado>Por aprobar</span></header>
- <div class="cuerpo">
-  <div class="media"><img src="img/JTE3_sf.jpg?v=2" alt="Anuncio 3 · From San Francisco to Italy · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE3_sf.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
-  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">From San Francisco to Italy. ✈️
-
-This spring, a small group of Bay Area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.
-
-Your player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.
-
-👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">From San Francisco to Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
-   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
-   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
-   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en San Francisco"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
-   <p class="aviso" data-aviso aria-live="polite"></p>
-   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
-  </div>
- </div>
-</article>
 <article class="ad" data-id="SF_4_chance">
- <header><span class="num">SF</span><div><h3>4 · The chance of a lifetime</h3><span class="fecha">Muestra que también es para niñas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <header><span class="num">SF</span><div><h3>The chance of a lifetime</h3><span class="fecha">Emoción: muestra que también es para niñas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
  <div class="cuerpo">
-  <div class="media"><img src="img/JTE4_chance.jpg?v=2" alt="Anuncio 4 · The chance of a lifetime · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE4_chance.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="media"><img src="img/JTE4_chance.jpg?v=2" alt="Anuncio The chance of a lifetime · SAN FRANCISCO" loading="lazy"><a class="dl" href="img/JTE4_chance.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
   <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.
 
 Boys and girls from the Bay Area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.
@@ -168,18 +150,18 @@ Boys and girls from the Bay Area could be among the few to live the Juventus Tra
    <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
   </div>
  </div>
-</article></div><div class="ciudad" id="sea"><h3 class="ctit">SEATTLE</h3><p class="csub">Conjunto SEA · Seattle + 20 millas · USD 4/día · estos 4 anuncios son los que ve una familia de Seattle area</p>
-<article class="ad" data-id="SEA_1_hero">
- <header><span class="num">SEA</span><div><h3>1 · Hero</h3><span class="fecha">Train in Italy with Juventus: las dos fechas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+</article></div><div class="ciudad" id="sea"><h3 class="ctit">SEATTLE</h3><p class="csub">Conjunto SEA · Seattle + 20 millas · USD 4/día · estos 3 anuncios son los que ve una familia de Seattle area</p>
+<article class="ad" data-id="SEA_3_ciudad">
+ <header><span class="num">SEA</span><div><h3>From Seattle to Italy</h3><span class="fecha">Grupo + ciudad: la pieza con el nombre de la ciudad (solo en este conjunto).</span></div><span class="estado" data-estado>Por aprobar</span></header>
  <div class="cuerpo">
-  <div class="media"><img src="img/JTE1_hero.jpg?v=2" alt="Anuncio 1 · Hero · SEATTLE" loading="lazy"><a class="dl" href="img/JTE1_hero.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
-  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">This spring, a small group of young players from the Seattle area will train where Juventus trains.
+  <div class="media"><img src="img/JTE3_sea.jpg?v=2" alt="Anuncio From Seattle to Italy · SEATTLE" loading="lazy"><a class="dl" href="img/JTE3_sea.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">From Seattle to Italy. ✈️
 
-7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium &amp; Juventus Museum tour, and international friendly matches (subject to availability).
+This spring, a small group of Seattle-area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.
 
-Two dates: March 21–27 or April 4–10, 2027. Boys &amp; girls, ages 6–16. Spots are limited.
+Your player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.
 
-👉 Leave your details on the page and our team will call you with the full itinerary and packages.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">Train with Juventus in Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
+👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">From Seattle to Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
    <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
    <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
    <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en Seattle"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
@@ -189,9 +171,9 @@ Two dates: March 21–27 or April 4–10, 2027. Boys &amp; girls, ages 6–16. S
  </div>
 </article>
 <article class="ad" data-id="SEA_2_incluye">
- <header><span class="num">SEA</span><div><h3>2 · Qué incluye</h3><span class="fecha">Los 7 días, punto por punto.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <header><span class="num">SEA</span><div><h3>Qué incluye</h3><span class="fecha">Información: los 7 días, punto por punto.</span></div><span class="estado" data-estado>Por aprobar</span></header>
  <div class="cuerpo">
-  <div class="media"><img src="img/JTE2_incluye.jpg?v=2" alt="Anuncio 2 · Qué incluye · SEATTLE" loading="lazy"><a class="dl" href="img/JTE2_incluye.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="media"><img src="img/JTE2_incluye.jpg?v=2" alt="Anuncio Qué incluye · SEATTLE" loading="lazy"><a class="dl" href="img/JTE2_incluye.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
   <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">What 7 days inside the Juventus world look like:
 
 ✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)
@@ -210,29 +192,10 @@ For Seattle-area players ages 6–16. March 21–27 or April 4–10, 2027.
   </div>
  </div>
 </article>
-<article class="ad" data-id="SEA_3_ciudad">
- <header><span class="num">SEA</span><div><h3>3 · From Seattle to Italy</h3><span class="fecha">La pieza con el nombre de la ciudad (solo en este conjunto).</span></div><span class="estado" data-estado>Por aprobar</span></header>
- <div class="cuerpo">
-  <div class="media"><img src="img/JTE3_sea.jpg?v=2" alt="Anuncio 3 · From Seattle to Italy · SEATTLE" loading="lazy"><a class="dl" href="img/JTE3_sea.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
-  <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">From Seattle to Italy. ✈️
-
-This spring, a small group of Seattle-area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.
-
-Your player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.
-
-👉 Request the details here and our team will contact you.</div><div class="lbl">Título <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="titulo">From Seattle to Italy</div><div class="lbl">Descripción <span class="hint">· se puede editar</span></div><div class="ed" contenteditable="true" spellcheck="true" data-campo="descripcion">Spring 2027 · Ages 6–16 · Limited spots</div>
-   <div class="lbl">Botón (CTA)</div><p class="btn">Learn more → juventuscampsusa.com/experience</p>
-   <div class="acciones"><button type="button" class="aprobar" data-accion="aprobar">Aprobar</button><button type="button" class="sec" data-accion="nota">Dejar una nota</button><button type="button" class="sec deshacer" data-accion="restaurar" hidden>Volver al texto original</button></div>
-   <div class="nota" hidden><textarea rows="2" placeholder="Nota para este anuncio en Seattle"></textarea><button type="button" class="sec" data-accion="enviar-nota">Enviar nota</button></div>
-   <p class="aviso" data-aviso aria-live="polite"></p>
-   <div class="chat"><div class="lbl">Notas y correcciones</div><ul data-chat><li class="vacio">Sin notas todavía.</li></ul></div>
-  </div>
- </div>
-</article>
 <article class="ad" data-id="SEA_4_chance">
- <header><span class="num">SEA</span><div><h3>4 · The chance of a lifetime</h3><span class="fecha">Muestra que también es para niñas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
+ <header><span class="num">SEA</span><div><h3>The chance of a lifetime</h3><span class="fecha">Emoción: muestra que también es para niñas.</span></div><span class="estado" data-estado>Por aprobar</span></header>
  <div class="cuerpo">
-  <div class="media"><img src="img/JTE4_chance.jpg?v=2" alt="Anuncio 4 · The chance of a lifetime · SEATTLE" loading="lazy"><a class="dl" href="img/JTE4_chance.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
+  <div class="media"><img src="img/JTE4_chance.jpg?v=2" alt="Anuncio The chance of a lifetime · SEATTLE" loading="lazy"><a class="dl" href="img/JTE4_chance.jpg?v=2" target="_blank" rel="noopener">Ver a tamaño real (1080x1350)</a></div>
   <div class="copy"><div class="lbl">Texto principal <span class="hint">· se puede editar</span></div><div class="ed largo" contenteditable="true" spellcheck="true" data-campo="texto">7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.
 
 Boys and girls from the Seattle area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.
@@ -246,6 +209,7 @@ Boys and girls from the Seattle area could be among the few to live the Juventus
   </div>
  </div>
 </article></div>
+<p class="nota-p reserva"><img src="img/JTE1_hero.jpg?v=2" alt="Hero de reserva" loading="lazy"><span><b>De reserva (no se pauta por ahora):</b> el hero "Train in Italy with Juventus". Se sube en lugar de un anuncio que se canse (frecuencia alta y costo por registro subiendo) después de los primeros 7 días.</span></p>
 </section>
 
 <section id="seguimiento">
@@ -272,14 +236,14 @@ Boys and girls from the Seattle area could be among the few to live the Juventus
  <li><b>0 registros con buenos clics (CTR de enlace del 1 % o más):</b> el problema está en la página; se prueba el plan B.</li>
  <li><b>0 registros con pocos clics:</b> el problema está en los anuncios; se cambia el ángulo o se sube el video de Jesús.</li>
  <li><b>Si una ciudad rinde el doble que la otra:</b> se le pasa el presupuesto.</li>
- <li><b>Pausas:</b> ningún anuncio antes de 7 días, de a uno y nunca el único activo.</li>
+ <li><b>Pausas:</b> ningún anuncio antes de 7 días, de a uno y nunca el único activo. Si un anuncio se cansa, entra el hero de reserva en su lugar.</li>
 </ul>
 </section>
 <p class="nota-p">Para confirmar en una nota (en cualquier anuncio o por WhatsApp): quién llama a los leads, cupo real por fecha y fecha de cierre de inscripciones, si se arman los correos y SMS del seguimiento y para cuándo el video de Jesús.</p>
 </div>
 <script>
 const CFG={"accion": "https://docs.google.com/forms/d/e/1FAIpQLSeGUY8Cv9Ea08X9HkdznY9pzVoUc4Gj-GdymsVTFP86wbE5sw/formResponse", "entry": {"pieza": 333677581, "cuenta": 724853821, "autor": 299801437, "comentario": 1175231019, "copy_corregido": 1649408514, "copy_original": 1637675582, "enviado": 909195940, "tipo": 1605073129, "zona": 1831673234, "fila": 1327618412}, "cuenta": "jte_sf_seattle"};
-const ORIG={"SF_1_hero": {"texto": "This spring, a small group of young players from the Bay Area will train where Juventus trains.\n\n7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium & Juventus Museum tour, and international friendly matches (subject to availability).\n\nTwo dates: March 21–27 or April 4–10, 2027. Boys & girls, ages 6–16. Spots are limited.\n\n👉 Leave your details on the page and our team will call you with the full itinerary and packages.", "titulo": "Train with Juventus in Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_2_incluye": {"texto": "What 7 days inside the Juventus world look like:\n\n✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)\n✅ Allianz Stadium & Juventus Museum tour\n✅ International friendly matches (subject to availability)\n✅ 6 nights in Italy, hotel included\n\nFor Bay Area players ages 6–16. March 21–27 or April 4–10, 2027.\n\n👉 Leave your details on the page and our team will call you with the itinerary and packages.", "titulo": "7 days inside the Juventus world", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_3_ciudad": {"texto": "From San Francisco to Italy. ✈️\n\nThis spring, a small group of Bay Area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.\n\nYour player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "From San Francisco to Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_4_chance": {"texto": "7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.\n\nBoys and girls from the Bay Area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "The chance of a lifetime", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_1_hero": {"texto": "This spring, a small group of young players from the Seattle area will train where Juventus trains.\n\n7 days in Italy inside the Juventus world: 6 training sessions with Juventus coaches (2 at the Juventus Training Center), the Allianz Stadium & Juventus Museum tour, and international friendly matches (subject to availability).\n\nTwo dates: March 21–27 or April 4–10, 2027. Boys & girls, ages 6–16. Spots are limited.\n\n👉 Leave your details on the page and our team will call you with the full itinerary and packages.", "titulo": "Train with Juventus in Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_2_incluye": {"texto": "What 7 days inside the Juventus world look like:\n\n✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)\n✅ Allianz Stadium & Juventus Museum tour\n✅ International friendly matches (subject to availability)\n✅ 6 nights in Italy, hotel included\n\nFor Seattle-area players ages 6–16. March 21–27 or April 4–10, 2027.\n\n👉 Leave your details on the page and our team will call you with the itinerary and packages.", "titulo": "7 days inside the Juventus world", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_3_ciudad": {"texto": "From Seattle to Italy. ✈️\n\nThis spring, a small group of Seattle-area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.\n\nYour player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "From Seattle to Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_4_chance": {"texto": "7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.\n\nBoys and girls from the Seattle area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "The chance of a lifetime", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}};
+const ORIG={"SF_3_ciudad": {"texto": "From San Francisco to Italy. ✈️\n\nThis spring, a small group of Bay Area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.\n\nYour player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "From San Francisco to Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_2_incluye": {"texto": "What 7 days inside the Juventus world look like:\n\n✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)\n✅ Allianz Stadium & Juventus Museum tour\n✅ International friendly matches (subject to availability)\n✅ 6 nights in Italy, hotel included\n\nFor Bay Area players ages 6–16. March 21–27 or April 4–10, 2027.\n\n👉 Leave your details on the page and our team will call you with the itinerary and packages.", "titulo": "7 days inside the Juventus world", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SF_4_chance": {"texto": "7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.\n\nBoys and girls from the Bay Area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "The chance of a lifetime", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_3_ciudad": {"texto": "From Seattle to Italy. ✈️\n\nThis spring, a small group of Seattle-area players will live 7 days inside the Juventus world: training sessions with Juventus coaches, the Juventus Training Center, the Allianz Stadium and the Juventus Museum.\n\nYour player could be one of them. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "From Seattle to Italy", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_2_incluye": {"texto": "What 7 days inside the Juventus world look like:\n\n✅ 6 training sessions with Juventus coaches (2 at the Juventus Training Center)\n✅ Allianz Stadium & Juventus Museum tour\n✅ International friendly matches (subject to availability)\n✅ 6 nights in Italy, hotel included\n\nFor Seattle-area players ages 6–16. March 21–27 or April 4–10, 2027.\n\n👉 Leave your details on the page and our team will call you with the itinerary and packages.", "titulo": "7 days inside the Juventus world", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}, "SEA_4_chance": {"texto": "7 days. 6 training sessions with Juventus coaches. One unforgettable spring in Italy.\n\nBoys and girls from the Seattle area could be among the few to live the Juventus Training Experience in 2027. Ages 6–16 · March 21–27 or April 4–10, 2027.\n\n👉 Request the details here and our team will contact you.", "titulo": "The chance of a lifetime", "descripcion": "Spring 2027 · Ages 6–16 · Limited spots", "cta": "Learn more"}};
 const LSK='jte_sf_sea_v1';
 const LS={get(){try{return JSON.parse(localStorage.getItem(LSK)||'{}')}catch(e){return {}}},set(v){try{localStorage.setItem(LSK,JSON.stringify(v))}catch(e){}}};
 const norm=t=>(t||'').replace(/\u00a0/g,' ').split('\n').map(l=>l.trim()).join('\n').replace(/\n{3,}/g,'\n\n').trim();
@@ -303,7 +267,7 @@ async function nota(ad){const ta=ad.querySelector('.nota textarea'),t=ta.value.t
   const ok=await enviar({pieza:ad.dataset.id,cuenta:CFG.cuenta,autor:'Alessandro',tipo:'comentario',comentario:t,copy_original:'',copy_corregido:cambiado(ad)?JSON.stringify(leer(ad)):'',enviado:new Date().toISOString(),zona:'',fila:''});
   av.textContent=ok?'Nota enviada.':'No se pudo enviar la nota.';if(ok){ta.value='';ad.querySelector('.nota').hidden=true;burbuja(ad.querySelector('[data-chat]'),'ale','Alessandro · ahora',t)}}
 function contar(){const n=document.querySelectorAll('.ad').length,ap=document.querySelectorAll('.ad.aprobado').length;
-  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' anuncios aprobados (4 por ciudad)';document.querySelector('.todo button').hidden=ap===n}
+  document.querySelector('.todo .cuenta').textContent=ap+' de '+n+' anuncios aprobados (3 por ciudad)';document.querySelector('.todo button').hidden=ap===n}
 document.querySelectorAll('.ad').forEach(ad=>{ad.querySelectorAll('.ed').forEach(e=>e.addEventListener('input',()=>pintar(ad)));
   ad.addEventListener('click',ev=>{const a=ev.target.closest('[data-accion]');if(!a)return;const k=a.dataset.accion;
     if(k==='aprobar')aprobar(ad);
