@@ -1,1 +1,70 @@
-[]
+[
+ {
+  "pieza": "SF_3_ciudad",
+  "de": "ale",
+  "ok": false,
+  "quien": "Alessandro · 2 Nov · 10:08",
+  "texto": "From the US to Italy como titulo"
+ },
+ {
+  "pieza": "SF_2_incluye",
+  "de": "ale",
+  "ok": true,
+  "quien": "Alessandro · 2 Nov · 10:09",
+  "texto": "Aprobado"
+ },
+ {
+  "pieza": "SF_4_chance",
+  "de": "ale",
+  "ok": true,
+  "quien": "Alessandro · 2 Nov · 10:09",
+  "texto": "Aprobado"
+ },
+ {
+  "pieza": "SF_5_video",
+  "de": "ale",
+  "ok": true,
+  "quien": "Alessandro · 2 Nov · 10:10",
+  "texto": "Aprobado"
+ },
+ {
+  "pieza": "SEA_3_ciudad",
+  "de": "ale",
+  "ok": false,
+  "quien": "Alessandro · 2 Nov · 10:10",
+  "texto": "poner como titulo from the US to Italyt"
+ },
+ {
+  "pieza": "SEA_2_incluye",
+  "de": "ale",
+  "ok": true,
+  "quien": "Alessandro · 2 Nov · 10:10",
+  "texto": "Aprobado"
+ },
+ {
+  "pieza": "SEA_4_chance",
+  "de": "ale",
+  "ok": true,
+  "quien": "Alessandro · 2 Nov · 10:11",
+  "texto": "Aprobado"
+ },
+ {
+  "pieza": "SEA_5_video",
+  "de": "ale",
+  "ok": true,
+  "quien": "Alessandro · 2 Nov · 10:11",
+  "texto": "Aprobado"
+ },
+ {
+  "pieza": "SF_3_ciudad",
+  "quien": "Marketing · 2 Nov",
+  "texto": "Listo: título cambiado a \"From the US to Italy\" (también la primera línea del texto). La imagen sigue diciendo \"From San Francisco to Italy\"; si se prefiere cambiarla también, se rehace.",
+  "de": "resp"
+ },
+ {
+  "pieza": "SEA_3_ciudad",
+  "quien": "Marketing · 2 Nov",
+  "texto": "Listo: título cambiado a \"From the US to Italy\" (también la primera línea del texto). La imagen sigue diciendo \"From Seattle to Italy\"; si se prefiere cambiarla también, se rehace.",
+  "de": "resp"
+ }
+]

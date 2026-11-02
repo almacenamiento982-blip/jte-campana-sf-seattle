@@ -1,1 +1,32 @@
-{}
+{
+ "SF_2_incluye": {
+  "tipo": "aprobado",
+  "v": null,
+  "hora": "2026-11-02T15:09:07.070575Z"
+ },
+ "SF_4_chance": {
+  "tipo": "aprobado",
+  "v": null,
+  "hora": "2026-11-02T15:09:31.401327Z"
+ },
+ "SF_5_video": {
+  "tipo": "aprobado",
+  "v": null,
+  "hora": "2026-11-02T15:10:05.729791Z"
+ },
+ "SEA_2_incluye": {
+  "tipo": "aprobado",
+  "v": null,
+  "hora": "2026-11-02T15:10:59.922719Z"
+ },
+ "SEA_4_chance": {
+  "tipo": "aprobado",
+  "v": null,
+  "hora": "2026-11-02T15:11:03.000927Z"
+ },
+ "SEA_5_video": {
+  "tipo": "aprobado",
+  "v": null,
+  "hora": "2026-11-02T15:11:15.740399Z"
+ }
+}
